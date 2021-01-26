@@ -17,6 +17,7 @@ Resources:
       CodeUri: hello_world/
       Handler: app.lambda_handler
       Runtime: python2.7
+      Role: !Sub arn:aws:iam::382512071041:role/sam-test-bashscript
       Events:
         HelloWorld:
           Type: Api # More info about API Event Source: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#api
